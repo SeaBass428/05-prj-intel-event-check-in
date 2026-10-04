@@ -37,9 +37,14 @@
     <div class="container">
       <!-- Feedback message -->
       <p id="greeting"></p>
+      <p
+        id="teamCelebration"
+        class="team-celebration"
+        aria-live="polite"
+      ></p>
 
       <!-- Check-in form -->
-      <form class="check-in" id="checkInForm">
+      <form class="check-in" id="checkin-form">
         <label for="attendeeName" class="form-label">Attendee Check-In</label>
         <div class="form-group">
           <div class="input-wrapper">
@@ -79,6 +84,10 @@
             <span class="team-name">⚡ Team Renewables</span>
             <span class="team-count" id="powerCount">0</span>
           </div>
+        </div>
+        <div class="attendee-list">
+          <h4>Attendee List</h4>
+          <ul id="attendeeList"></ul>
         </div>
       </div>
     </div>
